@@ -56,3 +56,4 @@ def test_feature_matrix_validator_detects_shape_mismatches() -> None:
     y2 = pd.Series([0, 1, 0])
     with pytest.raises(ValueError, match="Length mismatch"):
         validate_feature_matrix_shapes(x, y1, y2)
+

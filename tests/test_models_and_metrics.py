@@ -86,3 +86,4 @@ def test_tail_risk_predictor_produces_bounded_metrics() -> None:
     assert 0.0 <= metrics.specificity <= 1.0
     assert len(oof_probs) == 100
     assert (oof_probs >= 0.0).all() and (oof_probs <= 1.0).all()
+

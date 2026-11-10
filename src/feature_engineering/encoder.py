@@ -82,3 +82,4 @@ def encode_feature_matrix(df: pd.DataFrame) -> FeatureMatrix:
         target_tail_risk=y_tail_risk.astype(int),
         asset_identifiers=identifiers,
     )
+

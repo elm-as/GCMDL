@@ -75,3 +75,4 @@ def parse_arguments() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_arguments()
     inspect_asset_risk(args.symbol)
+

@@ -47,3 +47,4 @@ def summarize_evaluation_report(
     )
 
     return "\n".join(lines)
+

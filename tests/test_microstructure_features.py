@@ -48,3 +48,4 @@ def test_microstructure_features_are_pure_and_deterministic() -> None:
     # Prove tail risk indicator correctly flags >85% collapse
     assert augmented.loc[0, "is_catastrophic_drawdown"] == 0
     assert augmented.loc[1, "is_catastrophic_drawdown"] == 1
+

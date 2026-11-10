@@ -13,3 +13,4 @@ Write-Host "GCMDL 2026: Global Crypto Market Dynamics & Liquidity" -ForegroundCo
 Write-Host "========================================================" -ForegroundColor Cyan
 
 & $PythonExe main.py @args
+

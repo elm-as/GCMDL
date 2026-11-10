@@ -31,3 +31,4 @@ def load_processed_telemetry(path: Path) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(f"Processed telemetry file not found at: {path}")
     return pd.read_parquet(path)
+

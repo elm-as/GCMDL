@@ -151,3 +151,4 @@ def run_pipeline() -> PipelineRunResult:
 
 if __name__ == "__main__":
     run_pipeline()
+

@@ -290,3 +290,4 @@ def generate_interactive_dashboard(
 """
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html_content, encoding="utf-8")
+

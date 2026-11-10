@@ -46,3 +46,4 @@ def test_encoder_constructs_valid_feature_matrix() -> None:
     assert matrix.target_tail_risk[0] == 0
     assert matrix.target_tail_risk[1] == 0
     assert not matrix.features.isnull().any().any()
+

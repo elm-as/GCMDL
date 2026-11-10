@@ -79,3 +79,4 @@ class ProjectConfig:
 
     data: DataConfig = field(default_factory=DataConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
+

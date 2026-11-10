@@ -57,3 +57,4 @@ def validate_feature_matrix_shapes(
     if features.isnull().any().any():
         null_counts = features.isnull().sum()[lambda x: x > 0].to_dict()
         raise ValueError(f"Null values present in engineered features: {null_counts}")
+

@@ -66,22 +66,22 @@ The global digital asset ecosystem operates 24/7/365 across decentralized automa
 
 ```mermaid
 flowchart TD
-    RAW[CoinGecko API Telemetry: 1,000 Cryptocurrencies] --> DUAL[Dual-Tier Cognitive Annotation Pipeline]
-    DUAL -->|Cohen's Kappa κ = 0.9407| CLEAN[Cleanlab Confident Learning Denoising]
+    RAW["CoinGecko API Telemetry: 1,000 Cryptocurrencies"] --> DUAL["Dual-Tier Cognitive Annotation Pipeline"]
+    DUAL -->|"Cohen's Kappa = 0.9407"| CLEAN["Cleanlab Confident Learning Denoising"]
     
-    CLEAN --> FE[Microstructural Feature Engineering]
-    FE --> V_RATIO[Turnover Velocity: Volume / MarketCap]
-    FE --> AMIHUD[Amihud Illiquidity Proxy]
-    FE --> VOL_SPREAD[Corwin-Schultz Volatility Spread]
-    FE --> FDV_DIL[FDV Overhang & Supply Ratio]
+    CLEAN --> FE["Microstructural Feature Engineering"]
+    FE --> V_RATIO["Turnover Velocity: Volume / MarketCap"]
+    FE --> AMIHUD["Amihud Illiquidity Proxy"]
+    FE --> VOL_SPREAD["Corwin-Schultz Volatility Spread"]
+    FE --> FDV_DIL["FDV Overhang and Supply Ratio"]
     
-    FE --> TASK1[Task 1: 4-Regime Multi-Class Soft Ensemble<br/>LightGBM + CatBoost]
-    FE --> TASK2[Task 2: Tail-Risk Binary Classifier<br/>Catastrophic Drawdown >85%]
+    FE --> TASK1["Task 1: 4-Regime Multi-Class Soft Ensemble<br/>LightGBM + CatBoost"]
+    FE --> TASK2["Task 2: Tail-Risk Binary Classifier<br/>Catastrophic Drawdown > 85%"]
     
-    TASK1 --> METRICS1[Macro F1: 0.9958 | LogLoss: 0.0141 | Brier: 0.0073]
-    TASK2 --> METRICS2[ROC-AUC: 0.9996 | Sensitivity: 99.80% | Youden J: 0.3851]
+    TASK1 --> METRICS1["Macro F1: 0.9958 • LogLoss: 0.0141 • Brier: 0.0073"]
+    TASK2 --> METRICS2["ROC-AUC: 0.9996 • Sensitivity: 99.80% • Youden J: 0.3851"]
     
-    TASK1 --> DASH[Interactive Plotly HTML5 Dashboard & CLI Triage]
+    TASK1 --> DASH["Interactive Plotly HTML5 Dashboard and CLI Triage"]
     TASK2 --> DASH
     
     style RAW fill:#EEF2FF,stroke:#6366F1,color:#1e1b4b
@@ -420,3 +420,4 @@ If you utilize this benchmark or codebase in academic or industrial research, pl
 <div align="center">
 <sub>Built with precision by <b>ElmasCore</b> — "From Data to Systems"</sub>
 </div>
+

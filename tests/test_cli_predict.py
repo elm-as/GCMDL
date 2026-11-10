@@ -21,3 +21,4 @@ def test_inspect_asset_risk_executes_cleanly_for_btc() -> None:
     assert "Bitcoin (BTC)" in output
     assert "Turnover Velocity" in output
     assert "Cognitive CoT Diagnostic Rationale" in output
+
