@@ -1,0 +1,38 @@
+{
+  "census_size": 1000,
+  "turnover_classification": {
+    "macro_f1": 0.9957876297224924,
+    "weighted_f1": 0.9950067244478663,
+    "balanced_accuracy": 0.9961325254392177,
+    "multi_class_log_loss": 0.014083885766739407,
+    "brier_score": 0.007331092130224145,
+    "per_class_f1": {
+      "Illiquid_Constrained": 0.9967069154774972,
+      "Moderate_Liquid": 0.9922239502332815,
+      "High_Liquid_Active": 0.9942196531791907,
+      "Hyper_Liquid_Turnover": 1.0
+    }
+  },
+  "tail_risk_prediction": {
+    "roc_auc": 0.9995959741423451,
+    "pr_auc": 0.9995582423342089,
+    "optimal_threshold": 0.38510126632001507,
+    "sensitivity": 0.998015873015873,
+    "specificity": 0.9979838709677419,
+    "brier_score": 0.0030213257393877937
+  },
+  "top_liquidity_features": [
+    "turnover_ratio",
+    "volume_to_fdv_ratio",
+    "circulating_supply_ratio",
+    "log_volume_24h",
+    "price_change_percentage_24h"
+  ],
+  "top_tail_risk_features": [
+    "ath_drawdown_depth",
+    "atl_expansion_log",
+    "corwin_schultz_spread",
+    "fdv_overhang_multiplier",
+    "circulating_supply_ratio"
+  ]
+}
